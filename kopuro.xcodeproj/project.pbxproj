@@ -15,6 +15,9 @@
 		422B26F123D4914C0051D587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422B26EF23D4914C0051D587 /* LaunchScreen.storyboard */; };
 		422B26FC23D4914C0051D587 /* kopuroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B26FB23D4914C0051D587 /* kopuroTests.swift */; };
 		422B270723D4914C0051D587 /* kopuroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B270623D4914C0051D587 /* kopuroUITests.swift */; };
+		422B271523D492B60051D587 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B271423D492B60051D587 /* FirstView.swift */; };
+		422B271723D493DA0051D587 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B271623D493DA0051D587 /* SecondView.swift */; };
+		422B271923D493EF0051D587 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B271823D493EF0051D587 /* ThirdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		422B270223D4914C0051D587 /* kopuroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kopuroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		422B270623D4914C0051D587 /* kopuroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kopuroUITests.swift; sourceTree = "<group>"; };
 		422B270823D4914C0051D587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		422B271423D492B60051D587 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		422B271623D493DA0051D587 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		422B271823D493EF0051D587 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		422B26E323D491470051D587 /* kopuro */ = {
 			isa = PBXGroup;
 			children = (
+				422B271423D492B60051D587 /* FirstView.swift */,
+				422B271623D493DA0051D587 /* SecondView.swift */,
+				422B271823D493EF0051D587 /* ThirdView.swift */,
 				422B26E423D491470051D587 /* AppDelegate.swift */,
 				422B26E623D491470051D587 /* SceneDelegate.swift */,
 				422B26E823D491470051D587 /* ContentView.swift */,
@@ -268,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				422B26E523D491470051D587 /* AppDelegate.swift in Sources */,
+				422B271723D493DA0051D587 /* SecondView.swift in Sources */,
+				422B271523D492B60051D587 /* FirstView.swift in Sources */,
 				422B26E723D491470051D587 /* SceneDelegate.swift in Sources */,
+				422B271923D493EF0051D587 /* ThirdView.swift in Sources */,
 				422B26E923D491470051D587 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

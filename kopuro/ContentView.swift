@@ -10,7 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            FirstView()
+                .tabItem {
+                    Image(systemName: "1.square.fill")
+                    Text("トップ")
+                }
+            SecondView()
+                .tabItem {
+                    Image(systemName: "2.square.fill")
+                    Text("カテゴリ")
+                }
+            ThirdView()
+                .tabItem {
+                    Image(systemName: "3.square.fill")
+                    Text("カレンダー")
+                }
+            
+        }
+        .font(.headline)
     }
 }
 
