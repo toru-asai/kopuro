@@ -9,14 +9,25 @@
 import SwiftUI
 
 struct FirstView: View {
+    @State var posts: [Post] = []
     var body: some View {
         NavigationView{
-            VStack{
-                Text("")
-                Image(systemName: "1.square.fill")
+            List (posts) { post in
+                NavigationLink (destination: PostDetailView(post: post)) {
+                    Text(post.title)
+                }
             }
             .navigationBarTitle("トップ", displayMode: .inline)
             .padding(.leading)
+            
+        }        .onAppear {
+            NetworkManager.featchPosts { error, posts in
+                if let error = error {
+                    print(error)
+                    return
+                }
+                self.posts = posts
+            }
         }
     }
 }
