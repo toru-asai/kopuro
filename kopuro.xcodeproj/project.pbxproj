@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,9 @@
 		422B271523D492B60051D587 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B271423D492B60051D587 /* FirstView.swift */; };
 		422B271723D493DA0051D587 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B271623D493DA0051D587 /* SecondView.swift */; };
 		422B271923D493EF0051D587 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B271823D493EF0051D587 /* ThirdView.swift */; };
+		8D43994F23D860CD00B21868 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43994E23D860CD00B21868 /* NetworkManager.swift */; };
+		8D43995123D8611700B21868 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43995023D8611700B21868 /* Post.swift */; };
+		8D43995323D8679400B21868 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D43995223D8679400B21868 /* PostDetailView.swift */; };
 		DCE5C8F5824D2D911434625F /* Pods_kopuro_kopuroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B9E4CE664F35465A8670E3 /* Pods_kopuro_kopuroUITests.framework */; };
 		E26F27F457496D133EF5638F /* Pods_kopuroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2186AAE8C6ECF304933ED4C4 /* Pods_kopuroTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +66,9 @@
 		422B271623D493DA0051D587 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		422B271823D493EF0051D587 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		590AAA5793D3F9BF11A4E826 /* Pods-kopuro-kopuroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kopuro-kopuroUITests.debug.xcconfig"; path = "Target Support Files/Pods-kopuro-kopuroUITests/Pods-kopuro-kopuroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D43994E23D860CD00B21868 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8D43995023D8611700B21868 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8D43995223D8679400B21868 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		A1738E20E635BE16A653B6A7 /* Pods-kopuro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kopuro.debug.xcconfig"; path = "Target Support Files/Pods-kopuro/Pods-kopuro.debug.xcconfig"; sourceTree = "<group>"; };
 		A20536C3B8D536B874F28BA7 /* Pods-kopuro-kopuroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kopuro-kopuroUITests.release.xcconfig"; path = "Target Support Files/Pods-kopuro-kopuroUITests/Pods-kopuro-kopuroUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CC81C6C226568E3F9D955015 /* Pods_kopuro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kopuro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +134,9 @@
 				422B26E423D491470051D587 /* AppDelegate.swift */,
 				422B26E623D491470051D587 /* SceneDelegate.swift */,
 				422B26E823D491470051D587 /* ContentView.swift */,
+				8D43994E23D860CD00B21868 /* NetworkManager.swift */,
+				8D43995023D8611700B21868 /* Post.swift */,
+				8D43995223D8679400B21868 /* PostDetailView.swift */,
 				422B26EA23D4914C0051D587 /* Assets.xcassets */,
 				422B26EF23D4914C0051D587 /* LaunchScreen.storyboard */,
 				422B26F223D4914C0051D587 /* Info.plist */,
@@ -172,7 +181,6 @@
 				EBC413700548BB12A3FEF554 /* Pods-kopuroTests.debug.xcconfig */,
 				27133BDEE1C01E7FEC605121 /* Pods-kopuroTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -197,6 +205,7 @@
 				422B26DD23D491470051D587 /* Sources */,
 				422B26DE23D491470051D587 /* Frameworks */,
 				422B26DF23D491470051D587 /* Resources */,
+				468D6292C14F604B7341F498 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +243,7 @@
 				422B26FE23D4914C0051D587 /* Sources */,
 				422B26FF23D4914C0051D587 /* Frameworks */,
 				422B270023D4914C0051D587 /* Resources */,
+				75C0C9003664A8A6AB0A0307 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,6 +326,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		468D6292C14F604B7341F498 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kopuro/Pods-kopuro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kopuro/Pods-kopuro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kopuro/Pods-kopuro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75C0C9003664A8A6AB0A0307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kopuro-kopuroUITests/Pods-kopuro-kopuroUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kopuro-kopuroUITests/Pods-kopuro-kopuroUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kopuro-kopuroUITests/Pods-kopuro-kopuroUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		84861C5FB932239CB64D32A0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,9 +433,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D43995323D8679400B21868 /* PostDetailView.swift in Sources */,
 				422B26E523D491470051D587 /* AppDelegate.swift in Sources */,
 				422B271723D493DA0051D587 /* SecondView.swift in Sources */,
 				422B271523D492B60051D587 /* FirstView.swift in Sources */,
+				8D43995123D8611700B21868 /* Post.swift in Sources */,
+				8D43994F23D860CD00B21868 /* NetworkManager.swift in Sources */,
 				422B26E723D491470051D587 /* SceneDelegate.swift in Sources */,
 				422B271923D493EF0051D587 /* ThirdView.swift in Sources */,
 				422B26E923D491470051D587 /* ContentView.swift in Sources */,

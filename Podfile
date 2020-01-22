@@ -6,6 +6,7 @@ target 'kopuro' do
   use_frameworks!
 
   # Pods for kopuro
+  pod 'Alamofire', '~> 5.0.0-rc.3'
 
   target 'kopuroTests' do
     inherit! :search_paths
